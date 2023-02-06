@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/16th-react-7.code-workspace
+/16th-react-7.mov
