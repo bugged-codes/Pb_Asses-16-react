@@ -1,8 +1,8 @@
-# *Second React App!*
+# *7th React App!*
 
 </br>
 
-### Simple site created using react to understand and implement `state` and data in react.
+### After [6th-React App](https://github.com/bugged-codes/Pb_Asses-15-react "Previous React app") this handson is done using redux-toolkit to understand the use & implementation of Reactjs-redux.
 
 </br>
 

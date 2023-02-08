@@ -22,12 +22,13 @@ const StuTable = () => {
 				<tbody>
 					{stuArr.map((stuItem, stuIndex) => {
 						console.log('stuIndex is: ', stuIndex);
+						console.log('stuItem is: ', stuItem);
 						return (
 							<tr key={stuIndex}>
-								<td title="Student Name">{stuItem.Name}</td>
-								<td title="Student Age">{stuItem.Age}</td>
-								<td title="Student Course">{stuItem.Course}</td>
-								<td title="Student Batch">{stuItem.Batch}</td>
+								<td title="Student Name">{stuItem.newObj.Name}</td>
+								<td title="Student Age">{stuItem.newObj.Age}</td>
+								<td title="Student Course">{stuItem.newObj.Course}</td>
+								<td title="Student Batch">{stuItem.newObj.Batch}</td>
 								<td title="Edit Student Info">
 									<Link to={'/EditStudent'} state={{ rowNum: stuIndex }}>
 										Edit
@@ -36,11 +37,6 @@ const StuTable = () => {
 								<td title="Delete Student Info">
 									<button>🗑️</button>
 								</td>
-								{/* <td>
-									<Link to={'/AddNewStudent'} state={{ rowNum: stuIndex }}>
-										A
-									</Link>
-								</td> */}
 							</tr>
 						);
 					})}

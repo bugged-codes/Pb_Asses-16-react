@@ -36,13 +36,13 @@ const EditStu = () => {
 		<div>
 			<form action="">
 				<label htmlFor="Name">Name: </label>
-				<input type="text" placeholder={editArr[stuIndex].Name} name="Name" onChange={handleChange} />
+				<input type="text" placeholder={editArr[stuIndex].newObj.Name} name="Name" onChange={handleChange} />
 				<label htmlFor="Age">Age: </label>
-				<input type="number" min={18} max={26} placeholder={editArr[stuIndex].Age} name="Age" onChange={handleChange} />
+				<input type="number" min={18} max={26} placeholder={editArr[stuIndex].newObj.Age} name="Age" onChange={handleChange} />
 				<label htmlFor="Course">Course: </label>
-				<input type="text" placeholder={editArr[stuIndex].Course} name="Course" onChange={handleChange} />
+				<input type="text" placeholder={editArr[stuIndex].newObj.Course} name="Course" onChange={handleChange} />
 				<label htmlFor="Batch">Batch: </label>
-				<input type="text" placeholder={editArr[stuIndex].Batch} name="Batch" onChange={handleChange} />
+				<input type="text" placeholder={editArr[stuIndex].newObj.Batch} name="Batch" onChange={handleChange} />
 			</form>
 			<div className="btn-container">
 				<button onClick={handleCancel}>Cancel</button>
